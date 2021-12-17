@@ -1,0 +1,178 @@
+Basic Commands 
+
+1. Open the terminal
+
+
+2. To know which directory you are in, you can use the “pwd” command.
+
+pwd
+
+3. Go to desktop 
+
+cd Desktop
+
+4. Create a directory named "clarusway"
+
+mkdir clarusway
+
+5. List all the files/folders with details
+
+ls -l
+
+6. Create a file named test.txt
+
+touch test.txt
+
+7. Write "hello" to test.txt
+
+echo hello > test.txt
+
+8. Add "My name is Robert" to test.txt
+
+echo My name is Robert >> test.txt
+
+9. Print the content of test.txt
+
+cat test.txt
+
+10. Create a file named test1.txt and write "hello, this is second text file" while creating.
+
+echo "hello, this is the second line">test1.txt
+
+11. Print the contents of test1.txt
+
+cat test1.txt
+
+12. Display the contents of the file test.txt and test1.txt at the same time.
+
+cat test.txt test1.txt
+
+13. Create text files with the name multiple1.txt through multiple10.txt in current directory.
+
+touch multiple{1..10}.txt
+
+14. Go to upper directory
+
+cd ..
+
+15. Create a directory named "europe"
+
+mkdir europe
+
+16. Create two files named lab.txt and lab1.txt at the same time
+
+touch lab.txt lab1.txt
+
+17. Write "This is the second directories first file" in lab.txt
+
+echo "This is the second directories first file">lab.txt
+
+18. cat lab.txt
+
+cat lab.txt
+
+19. Make a copy of lab.txt in the current directory as newlab.txt
+
+cp lab.txt newlab.txt
+
+20. List all the files in the current directory.
+
+ls
+
+21. Print the contents of newlab.txt
+
+cat newlab.txt
+
+22. List any file in current directory with the extension of ".txt"
+
+ls *.txt
+
+23. List any file which begins with "n" and ends with".txt" 
+
+ls n*.txt
+
+Part 2 - Basic Commands 2/2
+
+24. Copy newlab.txt to the clarusway directory.
+
+cp newlab.txt ../clarusway
+
+25. Copy the files beginnig with "m*{6..10}" and ending with ".txt from clarusway directory to europe directory.
+
+cp m*{6..10}.txt ../europe
+
+26. Move the files beginnig with "m*{1..3}" and ending with ".txt from clarusway directory to europe directory.
+
+mv m*{1..3}.txt ../europe
+
+27. List all the files on Clarusway directory.
+
+ls
+
+28. Rename the newlab.txt file as linuxlab.txt.
+
+mv /Users/onurhanaydin/Desktop/clarusway/newlab.txt /Users/onurhanaydin/Desktop/clarusway/linuxlab.txt
+
+29. List the files with details on clarusway directory and see the renamed linuxlab.txt file.
+
+ls -l
+
+30. Print the permission details of linuxlab.txt.
+
+ls -l /Users/onurhanaydin/Desktop/clarusway/linuxlab.txt
+
+31. Change file permissions of the linuxlab.txt as everybody can read, write and execute.
+
+chmod 777 linuxlab.txt
+
+32. Change execute permissions of everybody to no execute permission on linuxlab.txt
+
+chmod -x linuxlab.txt
+
+33. Change the file permissions one level up on linuxlab.txt
+
+?
+
+34. Delete the linuxlab.txt file
+
+rm linuxlab.txt
+
+35. Create "america" directory
+
+mkdir america
+
+36. Delete america directory
+
+rmdir america
+
+37. Delete clarusway directory
+
+rm -r clarusway
+
+38. Go to the europe directory
+
+cd europe
+
+39. List the contents of europe directory
+
+ls
+
+40. Create a hidden linuxworkshop.txt file
+
+touch linuxworkshop.txt
+
+mv linuxworkshop.txt .linuxworkshop.txt
+
+41. Use ls command to list the contents of the europe directory
+
+ls
+
+42. Make the linuxworkshop.txt visible
+
+mv .linuxworkshop.txt linuxworkshop.txt
+
+43. Exit from the terminal 
+
+exit
+
+
